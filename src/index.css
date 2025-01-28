@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ... */
+
+@layer base {
+  :root {
+
+    --radius: 0.5rem
+  }
+}
+
+
+/* App.css or index.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E5E7EB; /* Light Gray */
+  font-family: Arial, sans-serif;
+}
