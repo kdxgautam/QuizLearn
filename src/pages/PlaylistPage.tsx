@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
@@ -144,7 +145,7 @@ const PlaylistPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <Quiz/>
+      <Quiz questions={[]} />
     </div>
   );
 };

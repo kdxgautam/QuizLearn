@@ -36,7 +36,6 @@ interface RecommendedPlaylist {
 }
 
 const DashboardSection = () => {
-  const [selectedCourse, setSelectedCourse] = useState<number | null>(null);
   const [showCongrats, setShowCongrats] = useState(false);
 
   const statsCards: StatsCard[] = [
@@ -82,16 +81,7 @@ const DashboardSection = () => {
     }
   ];
 
-  const handleCourseClick = (index:number) => {
-    setSelectedCourse(index);
-  };
 
-  const handleEnrollCourse = () => {
-    if (selectedCourse !== null) {
-      setShowCongrats(true);
-      setTimeout(() => setShowCongrats(false), 3000);
-    }
-  };
 
   const handleContinueCourse = (index:number) => {
     const updatedProgress = [...courseProgress];
