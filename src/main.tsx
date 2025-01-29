@@ -1,14 +1,25 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+// import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import { BrowserRouter } from "react-router";
+// import ReactDOM from 'react-dom/client'
 import Header from './components/Header.tsx'
 import Sidebar from './components/Sidebar.tsx'
 import Footer from './components/Footer.tsx'
+// import { ClerkProvider } from '@clerk/clerk-react'
+import ReactDOM from 'react-dom/client'
 
-createRoot(document.getElementById('root')!).render(
+
+
+
+
+
+
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <StrictMode>
+        {/* <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/"> */}
     <BrowserRouter>
 
   <div className="min-h-screen bg-gray-50">
@@ -22,5 +33,6 @@ createRoot(document.getElementById('root')!).render(
       </div>
     </div>
     </BrowserRouter>
+    {/* </ClerkProvider> */}
   </StrictMode>,
 )

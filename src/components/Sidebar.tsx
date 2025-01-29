@@ -10,7 +10,7 @@ const Sidebar: React.FC = () => {
 
   const navItems: NavItem[] = [
     {
-      path: '/',
+      path: '/dashboard',
       icon: Home,
       label: 'Dashboard'
     },
