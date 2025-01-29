@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, ChevronDown } from 'lucide-react';
 
 const Footer = () => {
